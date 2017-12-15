@@ -1,0 +1,19 @@
+1、YFPushStreamingSDKVersion @"4.4.0"  
+功能更新：1、“faceu美颜更换（新添加瘦脸、大眼、亮白、美颜、滤镜功能）”
+	   2、“推流端主播声音插上耳机后，可听耳麦采集的本地声音”
+2、@“4.4.1”
+功能更新：1：“耳机回响功能修复（切换前后台）”
+	2：”针对iphone5及以下型号解决黑屏问题（性能消耗较大）“
+3、@“4.4.2”
+功能更新：1：“将美颜与faceu分离，需替换几个文件”
+	2：“修复了镜像问题”
+	
+	替换文件如下：1、face_beautification.bundle
+		   2、libnama.a
+	最后：这次更新需要添加库依赖向Build Phases → Link Binary With Libraries 中添加依赖库，这里只需要添加Accelerate.framework一个库即可
+
+4、@“4.4.3”
+功能更新：1：
+	
+	使用注意：需在项目中build Setting -> Other Linker Flags 中添加 -ObjC
+	
